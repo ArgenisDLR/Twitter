@@ -76,7 +76,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
             return header
         } else {
             let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: footerId, for: indexPath)
-            footer.backgroundColor = .blue
+            footer.backgroundColor = .green
             return footer
         }
         
