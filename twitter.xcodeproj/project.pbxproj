@@ -8,19 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4D491B6C226317E4007D1D6B /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D491B6B226317E4007D1D6B /* HomeDatasourceController.swift */; };
-		4D491B712263316E007D1D6B /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D491B702263316E007D1D6B /* Cells.swift */; };
+		4D491B712263316E007D1D6B /* UserHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D491B702263316E007D1D6B /* UserHeaderFooter.swift */; };
 		4D491B73226331DF007D1D6B /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D491B72226331DF007D1D6B /* HomeDatasource.swift */; };
 		4D93B0CD225D4B8D000987C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D93B0CC225D4B8D000987C0 /* AppDelegate.swift */; };
 		4D93B0D7225D4B8E000987C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D93B0D5225D4B8E000987C0 /* LaunchScreen.storyboard */; };
 		4D93B0DF225D4C6C000987C0 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D93B0DE225D4C6C000987C0 /* HomeController.swift */; };
 		4D960C462263881100F90669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D960C452263881100F90669 /* Assets.xcassets */; };
+		4D960C482263896D00F90669 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D960C472263896D00F90669 /* User.swift */; };
+		4D960C4C226409A400F90669 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D960C4B226409A400F90669 /* UserCell.swift */; };
+		4DEB3DE022653D52006A45B2 /* HomeDatasourceController+NavBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEB3DDF22653D52006A45B2 /* HomeDatasourceController+NavBarItems.swift */; };
 		D1EC8520917DAAD1B7E99A6A /* Pods_twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99157CFDF69505809EC4ACE0 /* Pods_twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1040F858F7AA8A3F08E013FE /* Pods-twitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twitter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-twitter/Pods-twitter.debug.xcconfig"; sourceTree = "<group>"; };
 		4D491B6B226317E4007D1D6B /* HomeDatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
-		4D491B702263316E007D1D6B /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		4D491B702263316E007D1D6B /* UserHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderFooter.swift; sourceTree = "<group>"; };
 		4D491B72226331DF007D1D6B /* HomeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
 		4D93B0C9225D4B8D000987C0 /* twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D93B0CC225D4B8D000987C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		4D93B0D8225D4B8E000987C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D93B0DE225D4C6C000987C0 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		4D960C452263881100F90669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D960C472263896D00F90669 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4D960C4B226409A400F90669 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		4DEB3DDF22653D52006A45B2 /* HomeDatasourceController+NavBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDatasourceController+NavBarItems.swift"; sourceTree = "<group>"; };
 		99157CFDF69505809EC4ACE0 /* Pods_twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_twitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E55A605B0ADDC261C4278CA /* Pods-twitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twitter.release.xcconfig"; path = "Pods/Target Support Files/Pods-twitter/Pods-twitter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +53,8 @@
 		4D491B6D22633150007D1D6B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4D491B6B226317E4007D1D6B /* HomeDatasourceController.swift */,
+				4DEB3DDF22653D52006A45B2 /* HomeDatasourceController+NavBarItems.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -55,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				4D491B72226331DF007D1D6B /* HomeDatasource.swift */,
+				4D960C472263896D00F90669 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -62,7 +71,8 @@
 		4D491B6F22633154007D1D6B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4D491B702263316E007D1D6B /* Cells.swift */,
+				4D491B702263316E007D1D6B /* UserHeaderFooter.swift */,
+				4D960C4B226409A400F90669 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -91,14 +101,21 @@
 				4D491B6F22633154007D1D6B /* View */,
 				4D491B6E22633152007D1D6B /* Model */,
 				4D491B6D22633150007D1D6B /* Controller */,
-				4D93B0CC225D4B8D000987C0 /* AppDelegate.swift */,
+				4DEB3DDE22649844006A45B2 /* Supporting Files */,
 				4D93B0DE225D4C6C000987C0 /* HomeController.swift */,
-				4D960C452263881100F90669 /* Assets.xcassets */,
-				4D93B0D5225D4B8E000987C0 /* LaunchScreen.storyboard */,
 				4D93B0D8225D4B8E000987C0 /* Info.plist */,
-				4D491B6B226317E4007D1D6B /* HomeDatasourceController.swift */,
 			);
 			path = twitter;
+			sourceTree = "<group>";
+		};
+		4DEB3DDE22649844006A45B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D93B0CC225D4B8D000987C0 /* AppDelegate.swift */,
+				4D960C452263881100F90669 /* Assets.xcassets */,
+				4D93B0D5225D4B8E000987C0 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		ACD7261992D15D2FAD7310AF /* Frameworks */ = {
@@ -239,9 +256,12 @@
 			files = (
 				4D491B73226331DF007D1D6B /* HomeDatasource.swift in Sources */,
 				4D93B0CD225D4B8D000987C0 /* AppDelegate.swift in Sources */,
-				4D491B712263316E007D1D6B /* Cells.swift in Sources */,
+				4D960C482263896D00F90669 /* User.swift in Sources */,
+				4D491B712263316E007D1D6B /* UserHeaderFooter.swift in Sources */,
+				4DEB3DE022653D52006A45B2 /* HomeDatasourceController+NavBarItems.swift in Sources */,
 				4D491B6C226317E4007D1D6B /* HomeDatasourceController.swift in Sources */,
 				4D93B0DF225D4C6C000987C0 /* HomeController.swift in Sources */,
+				4D960C4C226409A400F90669 /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
