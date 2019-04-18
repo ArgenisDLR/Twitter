@@ -78,7 +78,6 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
             footer.backgroundColor = .green
             return footer
         }
-        
 
     }
     
