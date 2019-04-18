@@ -6,7 +6,7 @@
 //  Copyright © 2019 argenis delarosa. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Tweet {
     var user: User
