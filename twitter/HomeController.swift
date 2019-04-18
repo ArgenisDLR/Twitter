@@ -78,7 +78,6 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
             footer.backgroundColor = .green
             return footer
         }
-
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
