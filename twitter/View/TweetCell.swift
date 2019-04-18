@@ -113,13 +113,13 @@ class TweetCell: DatasourceCell {
         buttonStackView.anchor(nil, left: messageTextView.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 4, rightConstant: 0, widthConstant: 0, heightConstant: 20)
         
         addSubview(replyButtonContainerView)
-        anchor(replyButtonContainerView.topAnchor, left: replyButtonContainerView.rightAnchor, bottom: nil, right: nil, topConstant: <#T##CGFloat#>, leftConstant: <#T##CGFloat#>, bottomConstant: 0, rightConstant: 0, widthConstant: 20, heightConstant: 20)
+        anchor(replyButtonContainerView.topAnchor, left: replyButtonContainerView.rightAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 20, heightConstant: 20)
         
         addSubview(retweetButtonContainerView)
         retweetButtonContainerView.anchor(retweetButtonContainerView.topAnchor, left: retweetButtonContainerView.leftAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 20, heightConstant: 20)
         
         addSubview(likeButtonContainerView)
-        likeButtonContainerView.anchor(likeButtonContainerView, left: likeButtonContainerView.leftAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 20, heightConstant: 20)
+        likeButtonContainerView.anchor(likeButtonContainerView.topAnchor, left: likeButtonContainerView.leftAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 20, heightConstant: 20)
         
         addSubview(directMessageButtonContainerView)
         directMessageButtonContainerView.anchor(directMessageButtonContainerView.topAnchor, left: directMessageButtonContainerView.leftAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 20, heightConstant: 20)
