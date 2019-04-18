@@ -42,6 +42,7 @@ class HomeDatasourceController: DatasourceController {
             let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15)]
             
             let estimatedFrame = NSString(string: user.bioText).boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
+            
             return CGSize(width: view.frame.width, height: estimatedFrame.height + 66)
         }
         

@@ -41,7 +41,6 @@ class TweetCell: DatasourceCell {
         let imageView = UIImageView()
         imageView.image = #imageLiteral(resourceName: "IMG_7409")
         imageView.layer.cornerRadius = 5
-        imageView.layer.masksToBounds = true
         imageView.clipsToBounds = true
         return imageView
     }()
@@ -81,6 +80,9 @@ class TweetCell: DatasourceCell {
         addSubview(profileImageView)
         addSubview(messageTextView)
         
+//        addSubview(replyButton)
+//        addSubview(retweetButton)
+        
         profileImageView.anchor(self.topAnchor, left: self.leftAnchor, bottom: nil, right: nil, topConstant: 12, leftConstant: 12, bottomConstant: 0, rightConstant: 0, widthConstant: 50, heightConstant: 50)
         
         messageTextView.anchor(topAnchor, left: profileImageView.rightAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 4, leftConstant: 4, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
@@ -104,25 +106,21 @@ class TweetCell: DatasourceCell {
         buttonStackView.axis = .horizontal
         buttonStackView.distribution = .fillEqually
         
+        addSubview(buttonStackView)
+        buttonStackView.anchor(nil, left: messageTextView.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 4, rightConstant: 0, widthConstant: 0, heightConstant: 20)
+        
         addSubview(replyButton)
         addSubview(retweetButton)
         addSubview(likeButton)
         addSubview(messageButton)
+
+        replyButton.anchor(replyButtonContainerView.topAnchor, left: replyButtonContainerView.rightAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 20, heightConstant: 20)
+
+        retweetButton.anchor(retweetButtonContainerView.topAnchor, left: retweetButtonContainerView.leftAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 20, heightConstant: 20)
         
-        addSubview(buttonStackView)
-        buttonStackView.anchor(nil, left: messageTextView.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 4, rightConstant: 0, widthConstant: 0, heightConstant: 20)
+        likeButton.anchor(likeButtonContainerView.topAnchor, left: likeButtonContainerView.leftAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 20, heightConstant: 20)
         
-        addSubview(replyButtonContainerView)
-        anchor(replyButtonContainerView.topAnchor, left: replyButtonContainerView.rightAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 20, heightConstant: 20)
-        
-        addSubview(retweetButtonContainerView)
-        retweetButtonContainerView.anchor(retweetButtonContainerView.topAnchor, left: retweetButtonContainerView.leftAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 20, heightConstant: 20)
-        
-        addSubview(likeButtonContainerView)
-        likeButtonContainerView.anchor(likeButtonContainerView.topAnchor, left: likeButtonContainerView.leftAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 20, heightConstant: 20)
-        
-        addSubview(directMessageButtonContainerView)
-        directMessageButtonContainerView.anchor(directMessageButtonContainerView.topAnchor, left: directMessageButtonContainerView.leftAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 20, heightConstant: 20)
+        messageButton.anchor(directMessageButtonContainerView.topAnchor, left: directMessageButtonContainerView.leftAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 20, heightConstant: 20)
         
     }
     

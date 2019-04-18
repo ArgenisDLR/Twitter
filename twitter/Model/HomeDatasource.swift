@@ -15,11 +15,9 @@ class HomeDatasource: Datasource {
         
         let micahellaUser = User(name: "Micahella", username: "@Micahellastc", bioText: "#SoftwareEngineer / @ResilientCoders", profileImage: #imageLiteral(resourceName: "image2"))
         
-        //ADD THIRD USER HERE
+        let rayUser = User(name: "Ray Wenderlich", username: "@rwenderlich", bioText: "Ray Wenderlich is an iPhone developer and tweets on topics related to iPhone, software, and gaming. Check out our conference.", profileImage: #imageLiteral(resourceName: "ray_profile_image"))
         
-//        let u = User(name: <#T##String#>, username: <#T##String#>, bioText: <#T##String#>, profileImage: <#T##UIImage#>)
-        
-        return [argenisUser, micahellaUser]
+        return [argenisUser, micahellaUser, rayUser]
     }()
     
     let tweets: [Tweet] = {
