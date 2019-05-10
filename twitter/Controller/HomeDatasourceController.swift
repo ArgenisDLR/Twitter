@@ -8,6 +8,7 @@
 
 import LBTAComponents
 
+
 class HomeDatasourceController: DatasourceController {
     
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -24,6 +25,12 @@ class HomeDatasourceController: DatasourceController {
         
         let homeDatasource = HomeDatasource()
         self.datasource = homeDatasource
+        
+        fetchHomeFeed()
+    }
+    
+    fileprivate func fetchHomeFeed() {
+        print(123)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
